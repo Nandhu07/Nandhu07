@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>Html forms</title>
+</head>
+<body>
+    <h1>Tour Booking Form<h2>
+    <h3>Note:*Mandatory Fields<h4>
+    <hr>
+    <form action="example.com" method="post">
+        <label for="name">Full name*:</label> <br>
+        <input type="text" id="name" name="Full name" required ><br><br>
 
+        <label for="email">Email address*:</label> <br>
+        <input type="email" id="email" name="email" required> <br><br>
+
+        <label> Select Tour Package*:</label> <br>
+        <select name="Tour package">
+            <option value="South India">South India</option>
+            <option value="North India">North India</option>
+        </select> <br><br>
+
+        <label for="date">Arrival date*:</label> <br>
+        <input type="date" id="date" name="Arrival date"><br><br>
+
+        <label for="number">Number of persons*:</label> <br>
+        <input type="number" id="number" name="Number of persons" required><br><br>
+
+        <label> What would you want to avail?*</label> <br>
+        <input type="checkbox" id="Boarding" name="Add on" value="Boarding">
+        <label for="Boarding"> Boarding</label><br>
+        <input type="checkbox" id="Food" name="Add on" value="Food">
+        <label for="Food">Food</label><br>
+        <input type="checkbox" id="Sight seeing" name="Add on" value="Sight seeing">
+        <label for="Sight seeing"> Sight seeing</label><br><br>
+
+        <label> Terms and conditions*</label><br>
+        <input type="radio" id="agree" name="conditions" value="I agree">
+        <label for="agree">I agree</label>
+        <input type="radio" id="disagree" name="conditions" value="I disagree">
+        <label for="agree">I disagree</label><br><br>
+
+        <input type="submit" value="Book Now">
+    </form>
+</body>
+</html>
